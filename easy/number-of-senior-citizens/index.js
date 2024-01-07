@@ -5,11 +5,7 @@
 const countSeniors = (details) => {
     let seniors = 0
 
-    for (let i = 0; i < details.length; i++) {
-
-        if (details[i][10] !== 'M' && details[i][10] !== 'F' && details[i][10] !== 'O') {
-            continue
-        }
+    for (let i = 0; i < details.length; i++) {      
 
         const stringAge = details[i][11] + details[i][12]
         const age = Number.parseInt(stringAge)
